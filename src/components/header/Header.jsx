@@ -24,9 +24,8 @@ function Header() {
 
   
   return (
-    <div className="header">
-        <>
-        <div className="searchBar">
+    <section className="header">
+        <article className="searchBar">
             <input 
             type="text" 
             name="searchBar" 
@@ -39,8 +38,8 @@ function Header() {
           onClick = {handleSearchTerm}
           >
         </button>
-        </div>
-        <div className="search__results">
+        </article>
+        <article className="search__results">
             {datas
             .filter((val) => {
                 return val.title.toLowerCase().includes(searchTerm.toLowerCase());
@@ -52,11 +51,10 @@ function Header() {
                 </div>
                 );
             })}
-        </div>
-        </>
-        <div className="logo">
+        </article>
+        <article className="logo">
           <img src={Cheesecake}></img>
-        </div>
+        </article>
         <nav className={`navbar show-nav ${showLinks ? "show_nav" : "hide-nav"} `}>
         <ul className="navbar_links">
           <li className="navbar_item slideInDown-1">
@@ -84,7 +82,7 @@ function Header() {
           <span className="burger-bar"></span>
         </button>
       </nav>
-    </div>
+    </section>
   );
 }
 export default Header;

@@ -82,7 +82,6 @@ img{
     width: 0;
     height: 100vh;
     padding: 2rem;
-    visibility: hidden;
     background-color:  #467302;
     transition: all 0.8s ease-out;
 }
