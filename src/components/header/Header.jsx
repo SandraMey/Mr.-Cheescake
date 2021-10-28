@@ -4,20 +4,16 @@ import "./Header.css";
 import Cheesecake from "../../assets/Cheesecake.jpg";
 
 
+
 function Header() {
 
-  const [datas, setDatas] = useState([]);
+  const [datas, setDatas] = useState ([]); 
   const [searchTerm, setSearchTerm] = useState("");
-
-  useEffect(() => {
-    fetch("")
-      .then((response) => response.json())
-      .then((json) => setDatas(json));
-  }, []);
 
   const handleSearchTerm = (e) => {
     let value = e.target.value;
     value.length > 2 && setSearchTerm(value);
+    console.log("coucou")
   };
 
   const [showLinks, setShowLinks] = useState(false);
@@ -36,9 +32,13 @@ function Header() {
             name="searchBar" 
             id="searchBar" 
             placeholder="Rechercher" 
-            onChange = {handleSearchTerm}
             />
-
+        <button 
+          className="searchButton"
+          type="button"
+          onClick = {handleSearchTerm}
+          >
+        </button>
         </div>
         <div className="search__results">
             {datas
