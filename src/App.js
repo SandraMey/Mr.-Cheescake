@@ -1,6 +1,9 @@
 import {React, useState} from 'react';
 import './App.css';
 import axios from 'axios';
+import Footer from './components/footer/Footer';
+import Header from './components/header/Header';
+import Display from './components/Scan/Display';
 import DisplayCode from './components/api/DisplayCode';
 import Alternatives from "./components/alternatives/Alternatives";
 
@@ -21,13 +24,15 @@ function App() {
 const [product, setProduct] = useState('')
   return (
     <div className="App">
-
       <DisplayCode product={product} />
       <input type="codebarre" onChange={getOpenFoodFact}></input>
       <Alternatives/>
-
+      <Header />
+      <Display />
+      <Footer />
     </div>
   );
 }
+
 
 export default App;
