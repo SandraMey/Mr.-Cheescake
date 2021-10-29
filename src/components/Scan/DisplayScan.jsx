@@ -26,6 +26,8 @@ const DisplayScan = ({ product, setProduct }) => {
       initialRender.current = false;
     } else 
     getOpenFoodFact();
+    
+
   }, [barcode]);
 
   return (
