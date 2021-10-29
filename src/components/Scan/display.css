@@ -1,0 +1,37 @@
+*{
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+
+}
+
+.window {
+    position: relative;
+    border: 10px solid #467302;
+}
+
+.drawingBuffer{
+    position: absolute;
+    top: 0px;
+}
+
+button{
+    width: 10rem;
+    font-size: 2rem;
+    color: white;
+    background-color: #467302;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+button:hover{
+    background-color: #84BF04;
+    cursor: pointer;
+}
+

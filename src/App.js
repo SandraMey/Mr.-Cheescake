@@ -1,11 +1,13 @@
+import React from 'react';
+import Display from './components/Scan/Display';
 
-import './App.css';
+const App = () => {
 
-function App() {
-  return (
-    <div className="App">
-    </div>
-  );
-}
+    return (
+        <div>
+            <Display />
+        </div>
+    );
+};
 
 export default App;
