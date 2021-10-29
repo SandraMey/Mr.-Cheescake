@@ -13,4 +13,6 @@ Result.propTypes = {
     result: PropTypes.object
 };
 
+
 export default Result;
+
