@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+    margin: 30px;
+  }
+
+.isFavorite {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    margin-top: 10px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/35/Emoji_u2665.svg");
+    background-size: 100%;
+    cursor: pointer;
+  }
+  
+  .notFavorite {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    margin-top: 5px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4f/Ei-heart.svg");
+    background-size: 100%;
+    cursor: pointer;
+  }
+
+  .product-btn button {
+    background-color: #467302;
+    border-radius: 10px;
+    border: 4px double #84BF04;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px;
+    width: 200px;
+    margin: 30px;
+  }
+
+  button:active {
+    background-color: #84BF04;
+    }
+  
