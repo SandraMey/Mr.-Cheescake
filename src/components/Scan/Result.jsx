@@ -1,4 +1,3 @@
-
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -14,4 +13,6 @@ Result.propTypes = {
     result: PropTypes.object
 };
 
+
 export default Result;
+

@@ -1,5 +1,8 @@
 import {React, useState} from 'react';
 import './App.css';
+import Footer from './components/footer/Footer';
+import Header from './components/header/Header';
+import Display from './components/Scan/Display';
 import axios from 'axios';
 import DisplayCode from './components/api/DisplayCode';
 import DisplayScan from './components/Scan/DisplayScan';
@@ -23,6 +26,9 @@ const [product, setProduct] = useState('')
   return (
     <div className="App">
 
+      <Header />
+      <Display />
+      <Footer />
       <DisplayCode product={product} />
       <input type="codebarre" onChange={getOpenFoodFact}></input>
       <DisplayScan product={product} 
@@ -32,5 +38,6 @@ const [product, setProduct] = useState('')
     </div>
   );
 }
+
 
 export default App;

@@ -1,4 +1,3 @@
-
 import React, { useCallback, useLayoutEffect } from 'react';
 import PropTypes from 'prop-types';
 import Quagga from '@ericblade/quagga2';
@@ -136,4 +135,6 @@ Scanner.propTypes = {
     locate: PropTypes.bool,
 };
 
+
 export default Scanner;
+
