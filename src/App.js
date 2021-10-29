@@ -7,6 +7,7 @@ import axios from 'axios';
 import DisplayCode from './components/api/DisplayCode';
 import DisplayScan from './components/Scan/DisplayScan';
 import Alternatives from "./components/alternatives/Alternatives";
+import Home from './components/Home';
 
 
 function App() {
@@ -25,9 +26,10 @@ function App() {
 const [product, setProduct] = useState('')
   return (
     <div className="App">
-
+    
       <Header />
       <Display />
+      <Home />
       <Footer />
       <DisplayCode product={product} />
       <input type="codebarre" onChange={getOpenFoodFact}></input>

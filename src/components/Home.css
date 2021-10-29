@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.body{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  min-height: 600px;
+}
+.logomain{
+  display: flex;
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: center;
+}
+.logo{
+  align-self: flex-end;
+  width: 60px;
+  height: 60px;
+}
+.buttonscan{
+  order:1;
+  height: 50px;
+}
+.buttonconnect{
+  order:2;
+  height: 50px;
+}
+.button2 { 
+  background-color: white ;
+  color: #467302;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.button1 {
+  background-color: #467302;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.containerbutton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-column: 2;
+  grid-row: 2;
+}
