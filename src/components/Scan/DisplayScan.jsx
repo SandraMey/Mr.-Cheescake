@@ -4,7 +4,8 @@ import Result from "./Result";
 import "./display.css";
 import axios from "axios";
 
-const DisplayScan = ({ product, setProduct }) => {
+const DisplayScan = () => {
+    const [product, setProduct] = useState('')
   const [scanning, setScanning] = useState(false);
   const [results, setResults] = useState([]);
   const scannerRef = useRef(null);
@@ -26,10 +27,12 @@ const DisplayScan = ({ product, setProduct }) => {
       initialRender.current = false;
     } else 
     getOpenFoodFact();
+
+
   }, [barcode]);
 
   return (
-    <div>
+    <div className="displayScan">
       <div className="container">
         <button onClick={() => setScanning(!scanning)}>
           {scanning ? "Stop" : "Scan"}
