@@ -1,49 +1,50 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import "./Search.css";
+import axios from 'axios';
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
-function Search (){
+function Search() {
+    
+    const [searchTerm, setSearchTerm] = useState("");
+    const [product, setProduct] = useState('')
 
-    const [datas, setDatas] = useState ([]); 
-    const [searchTerm, setSearchTerm] = useState (""); 
-
-    useEffect(() =>{
-        fetch('https://jsonplaceholder.typicode.com/posts')
-            .then((response) => response.json())
-            .then((json) => setDatas(json));
-    }, []); 
 
     const handleSearchTerm = (e) => {
         let value = e.target.value;
         value.length > 2 && setSearchTerm(value);
+    };
+    const getOpenFoodFact = () => {
+    // Send the request 
+    const codebarre = 'camembert'
+    axios
+    .get(`https://world.openfoodfacts.org/cgi/search.pl?action=process&search_terms=${codebarre}`)
+    .then((response) => response.data)
+    .then((data) => {
+    setProduct(data.product)
+    console.log(data.product)
+    })
     }
+  
 
     return (
-        <>
-        <div className="searchBar">
+        <article className="searchBar">
             <input 
             type="text" 
             name="searchBar" 
             id="searchBar" 
             placeholder="Rechercher" 
-            onChange = {handleSearchTerm}
+            onChange={handleSearchTerm}
             />
+        <button 
+          className="searchButton"
+          type="button"
+          onClick = {getOpenFoodFact}
+          >
+        </button>
+        </article>
 
-        </div>
-        <div className="search__results">
-            {datas
-            .filter((val) => {
-                return val.title.toLowerCase().includes(searchTerm.toLowerCase());
-            })
-            .map((val) => {
-                return (
-                <div className="search__result" key={val.id}>
-                    {val.title}
-                </div>
-                );
-            })}
-        </div>
-        </>
-    );
+    )
 }
+
 export default Search;
