@@ -2,6 +2,7 @@ import {React, useState} from 'react';
 import './App.css';
 import axios from 'axios';
 import DisplayCode from './components/api/DisplayCode';
+import Alternatives from "./components/alternatives/Alternatives";
 
 
 function App() {
@@ -20,8 +21,11 @@ function App() {
 const [product, setProduct] = useState('')
   return (
     <div className="App">
+
       <DisplayCode product={product} />
       <input type="codebarre" onChange={getOpenFoodFact}></input>
+      <Alternatives/>
+
     </div>
   );
 }
