@@ -1,0 +1,4 @@
+{
+    "prettier.endOfLine": "auto",
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true
+}
