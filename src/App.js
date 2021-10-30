@@ -6,7 +6,8 @@ import Display from './components/Scan/Display';
 import axios from 'axios';
 import DisplayCode from './components/api/DisplayCode';
 import DisplayScan from './components/Scan/DisplayScan';
-import Alternatives from "./components/alternatives/Alternatives";
+
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 
 function App() {
@@ -29,12 +30,15 @@ const [product, setProduct] = useState('')
       <Header />
       <Display />
       <Footer />
-      <DisplayCode product={product} />
-      <input type="codebarre" onChange={getOpenFoodFact}></input>
       <DisplayScan product={product} 
       setProduct={setProduct}/>
-      <Alternatives/>
-
+      <Router>
+        <Link to="/DisplayCode"><input type="codebarre" onChange={getOpenFoodFact}></input></Link>
+      
+      <Switch>
+        <Route path="/DisplayCode" component={DisplayCode}/>
+      </Switch>
+      </Router>
     </div>
   );
 }

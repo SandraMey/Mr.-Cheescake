@@ -1,8 +1,8 @@
 import React from 'react';
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./Search.css";
 import axios from 'axios';
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+
 
 function Search() {
     
