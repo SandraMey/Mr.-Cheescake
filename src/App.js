@@ -2,12 +2,12 @@ import {React, useState} from 'react';
 import './App.css';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
-import Display from './components/Scan/Display';
 import axios from 'axios';
 import DisplayCode from './components/api/DisplayCode';
 import DisplayScan from './components/Scan/DisplayScan';
-
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import Home from './components/Home';
+
 
 
 function App() {
@@ -26,9 +26,8 @@ function App() {
 const [product, setProduct] = useState('')
   return (
     <div className="App">
-
+      
       <Header />
-      <Display />
       <Footer />
       <DisplayScan product={product} 
       setProduct={setProduct}/>
@@ -39,6 +38,7 @@ const [product, setProduct] = useState('')
         <Route path="/DisplayCode" component={DisplayCode}/>
       </Switch>
       </Router>
+
     </div>
   );
 }
