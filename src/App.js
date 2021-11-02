@@ -4,8 +4,10 @@ import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import axios from 'axios';
 import DisplayCode from './components/api/DisplayCode';
-import Alternatives from "./components/alternatives/Alternatives";
+import DisplayScan from './components/Scan/DisplayScan';
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import Home from './components/Home';
+
 
 
 function App() {
@@ -26,11 +28,18 @@ const [product, setProduct] = useState('')
     <div className="App">
       
       <Header />
-       <DisplayCode product={product} />
       <Home />
-      <input type="codebarre" onChange={getOpenFoodFact}></input>
-      <Alternatives/>
       <Footer />
+      <DisplayScan product={product} 
+      setProduct={setProduct}/>
+      <Router>
+        <Link to="/DisplayCode"><input type="codebarre" onChange={getOpenFoodFact}></input></Link>
+      
+      <Switch>
+        <Route path="/DisplayCode" component={DisplayCode}/>
+      </Switch>
+      </Router>
+
     </div>
   );
 }

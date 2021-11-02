@@ -1,7 +1,8 @@
 import React from 'react';
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./Search.css";
 import axios from 'axios';
+
 
 function Search() {
     

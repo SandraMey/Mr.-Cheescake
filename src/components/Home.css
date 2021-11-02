@@ -3,12 +3,16 @@
   padding: 0;
 
 }
+
 .body{
+  background-image: url(../assets/home.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   width: 100%;
-  min-height: 600px;
+  min-height: 800px;
 
 }
 .logomain{
@@ -16,12 +20,11 @@
   grid-column: 2;
   grid-row: 1;
   justify-self: center;
-}
-.logo{
   align-self: flex-end;
   width: 60px;
   height: 60px;
 }
+
 .buttonscan{
   order:1;
   height: 50px;
