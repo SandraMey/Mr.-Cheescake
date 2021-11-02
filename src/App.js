@@ -29,7 +29,7 @@ const [product, setProduct] = useState('')
       
       <Header />
       <Home />
-      <Footer />
+      
       <DisplayScan product={product} 
       setProduct={setProduct}/>
       <Router>
@@ -39,7 +39,7 @@ const [product, setProduct] = useState('')
         <Route path="/DisplayCode" component={DisplayCode}/>
       </Switch>
       </Router>
-
+      <Footer />
     </div>
   );
 }

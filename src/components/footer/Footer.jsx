@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Cheesecake from "../../assets/Cheesecake.jpg";
 import "./Footer.css";
@@ -6,7 +7,7 @@ function Footer() {
     return (
         <section class="footer">
             <article className="logofooter">
-                <img classeName="imgfooter" src={Cheesecake}></img>
+                <img className="imgfooter"src={Cheesecake}></img>
             </article>
             <article class="lien">
             <a class="lienstyle" href="html/contact.html">Contact -</a>
