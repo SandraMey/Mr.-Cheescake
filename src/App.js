@@ -3,10 +3,9 @@ import './App.css';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import axios from 'axios';
-import DisplayCode from './components/api/DisplayCode';
-import Alternatives from "./components/alternatives/Alternatives";
 import Home from './components/Home';
-
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import DisplayScan from './components/Scan/DisplayScan';
 
 function App() {
 
@@ -24,13 +23,30 @@ function App() {
 const [product, setProduct] = useState('')
   return (
     <div className="App">
-      
-      <Header />
-       <DisplayCode product={product} />
-      <Home />
-      <input type="codebarre" onChange={getOpenFoodFact}></input>
-      <Alternatives/>
-      <Footer />
+    <Header />
+ <Router>
+      <div>
+        <nav>
+ 
+            <button>
+              <Link to="/">Home</Link>
+            </button>
+            <button>
+              <Link to="/DisplayScan">Je scanne</Link>
+            </button>
+ 
+        </nav>
+        <Switch>
+        <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/DisplayScan">
+            <DisplayScan />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+    <Footer />
     </div>
   );
 }
