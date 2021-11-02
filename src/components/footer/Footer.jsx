@@ -6,7 +6,7 @@ function Footer() {
     return (
         <section class="footer">
             <article className="logofooter">
-                <img src={Cheesecake}></img>
+                <img classeName="imgfooter" src={Cheesecake}></img>
             </article>
             <article class="lien">
             <a class="lienstyle" href="html/contact.html">Contact -</a>

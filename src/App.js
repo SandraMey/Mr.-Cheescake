@@ -28,6 +28,7 @@ const [product, setProduct] = useState('')
     <div className="App">
       
       <Header />
+      <Home />
       <Footer />
       <DisplayScan product={product} 
       setProduct={setProduct}/>
