@@ -3,22 +3,24 @@
 }
 
 .header{
+    position: fixed;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 120px;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 80px;
     width: 100%;
     background-color: #467302 ;
 }
-.logo{
+.logoheader{
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 50%;
+    padding-left: 10%;
     padding-top: 0;
     grid-column: 1;
     grid-row: 1;
 }
-img{
+.imgheader{
     width: 55px;
     height: 55px;
 }
@@ -27,6 +29,7 @@ img{
 /* NAVBAR */
 
 .navbar{
+    position: static;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -78,6 +81,9 @@ img{
     font-size: 5vw;
 }
 .navbar_burger{
+    z-index: 1;
+    grid-column: 3;
+    grid-row: 1;
     width: 40px;
     height: 40px;
     background: transparent;
@@ -153,12 +159,13 @@ img{
         grid-column: 1;
         grid-row: 1;
     }
-    .logo{
+
+    .logoheader{
         justify-content: center;
         grid-column: 2 ;
         grid-row: 1;
     }
-    img{
+    .imgheader{
         width: 80px;
         height: 80px;
     }

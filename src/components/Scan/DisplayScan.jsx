@@ -34,7 +34,7 @@ const DisplayScan = () => {
   return (
     <div className="displayScan">
       <div className="container">
-        <button onClick={() => setScanning(!scanning)}>
+        <button className="buttonScan" onClick={() => setScanning(!scanning)}>
           {scanning ? "Stop" : "Scan"}
         </button>
 

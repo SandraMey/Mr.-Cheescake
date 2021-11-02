@@ -34,12 +34,18 @@
 }
 
 /* LOGO */
+
 .logofooter{
+    z-index: 1;
     display: flex;
+    align-items: center;
+    justify-content: center;
     grid-column: 1;
     grid-row: 1;
-    justify-content: center;
-    align-items: center;
+}
+.imgfooter{
+    width: 55px;
+    height: 55px;
 }
 
 /* RESPONSIVE */

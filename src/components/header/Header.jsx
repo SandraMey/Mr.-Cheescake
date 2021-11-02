@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Search from "./Search"
 import "./Header.css";
 import Cheesecake from "../../assets/Cheesecake.jpg";
@@ -18,8 +18,8 @@ function Header() {
   return (
     <section className="header">
           <Search />
-        <article className="logo">
-          <img src={Cheesecake}></img>
+        <article className="logoheader">
+          <img className="imgheader" src={Cheesecake}></img>
         </article>
         <nav className={`navbar show-nav ${showLinks ? "show_nav" : "hide-nav"} `}>
         <ul className="navbar_links">

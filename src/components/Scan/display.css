@@ -21,7 +21,7 @@
     top: 0px;
 }
 
-button{
+.buttonscan{
     width: 10rem;
     font-size: 2rem;
     color: white;
@@ -31,7 +31,7 @@ button{
     z-index: 2;
 }
 
-button:hover{
+.buttonscan:hover{
     background-color: #84BF04;
     cursor: pointer;
 
