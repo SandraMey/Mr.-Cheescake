@@ -8,8 +8,7 @@ import DisplayScan from './components/Scan/DisplayScan';
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 import Home from './components/Home';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-import DisplayScan from './components/Scan/DisplayScan';
+
 
 
 function App() {
