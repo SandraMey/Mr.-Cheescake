@@ -17,9 +17,17 @@ a{
   text-decoration: none;
 }
 
-button{
+nav{
   z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  
+  align-items: center;
+
 }
+
+
 
 
 
