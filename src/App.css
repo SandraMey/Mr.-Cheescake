@@ -33,7 +33,7 @@ a {
   top: 8rem;
 }
 
-button{
+.buttonmenu{
   width: 10rem;
   height: 3rem;
   color: white;
@@ -42,7 +42,7 @@ button{
   font-weight: 500;
 }
 
-button:hover{
+.buttonmenu:hover{
   background-color: #84BF04;
   cursor: pointer;
 

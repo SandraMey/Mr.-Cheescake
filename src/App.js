@@ -1,12 +1,16 @@
+
 import { React, useState } from "react";
 import "./App.css";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import axios from "axios";
 import DisplayScan from "./components/Scan/DisplayScan";
+
 import DisplayCode from "./components/api/DisplayCode";
 import Home from "./components/Home";
+
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+
 
 function App() {
   const [product, setProduct] = useState("");
@@ -33,10 +37,10 @@ function App() {
        
           <div className="nav-btn">
 
-            <button>
+            <button className="buttonmenu">
               <Link to="/">Home</Link>
             </button>
-            <button>
+            <button className="buttonmenu">
               <Link to="/DisplayScan">Je scanne</Link>
             </button>
             <button>

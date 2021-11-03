@@ -1,0 +1,12 @@
+.title{
+    display: flex;
+    justify-content: center;
+    background-color: #467302;
+    width: 200px;
+    height: 50px;
+    color: #FFFFFF;
+}
+.alimentation{
+    grid-column: 3;
+    grid-row: 1;
+}
