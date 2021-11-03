@@ -22,16 +22,19 @@ function App() {
   const [product, setProduct] = useState("");
   return (
     <div className="App">
+
       <Header />
       <Router>
-        
+       
           <div className="nav-btn">
+
             <button>
               <Link to="/">Home</Link>
             </button>
             <button>
               <Link to="/DisplayScan">Je scanne</Link>
             </button>
+
           </div>
           <Switch>
             <Route exact path="/">
@@ -44,6 +47,7 @@ function App() {
         
       </Router>
       <Footer />
+
     </div>
   );
 }
