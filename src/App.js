@@ -27,10 +27,12 @@ function App() {
 
   return (
     <div className="App">
+
       <Header />
       <Router>
-        
+       
           <div className="nav-btn">
+
             <button>
               <Link to="/">Home</Link>
             </button>
@@ -40,6 +42,7 @@ function App() {
             <button>
               <Link to="/DisplayCode">Fiche Produit</Link>
             </button>
+
           </div>
           <Switch>
             <Route exact path="/">
@@ -56,6 +59,7 @@ function App() {
       </Router>
       
       <Footer />
+
     </div>
   );
 }
