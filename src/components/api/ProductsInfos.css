@@ -1,0 +1,14 @@
+.title{
+    display: flex;
+    justify-content: center;
+    background-color: #467302;
+    width: 200px;
+    height: 50px;
+    color: #FFFFFF;
+}
+.InfoPrincipales{
+    display: flex;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 1;
+}

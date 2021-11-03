@@ -11,20 +11,12 @@
     height: 50px;
     color: #FFFFFF;
 }
-.InfoPrincipales{
-    display: flex;
-    align-items: center;
-    grid-column: 1;
-    grid-row: 1;
-}
+
 .imageProduit{
     grid-column: 2;
     grid-row: 1;
 }
-.alimentation{
-    grid-column: 3;
-    grid-row: 1;
-}
+
 .niveaunutritif{
     grid-column: 1;
     grid-row: 2;
