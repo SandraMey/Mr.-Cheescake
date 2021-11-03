@@ -1,11 +1,11 @@
 import React from 'react';
-import Alternatives from "./AlternativesAlternatives";
+import Alternatives from "./Alternatives";
 import ProductsInfos from './ProductsInfos';
 import ProductsIngredient from './ProductsIngredient';
 import ProductsNutri from './ProductsNutri';
 import ProductsProxi from './ProductsProxi';
 import "./DisplayCode.css"
-import ProductsNutri from './ProductsNutri';
+
 
 
 function DisplayCode({product}) {
@@ -14,19 +14,19 @@ function DisplayCode({product}) {
     product && (
       <div>
         <article className='DisplayCode'> 
-          <p className='imageProduit'> Intégrer image </p>
+          
 
           <div>
-            <ProductsInfos />
+            <ProductsInfos product={product}/>
           </div>
           <div>
-            <ProductsIngredient />
+            <ProductsIngredient product={product} />
           </div>
           <div>
-            <ProductsNutri />
+            <ProductsNutri  product={product}/>
           </div>
           <div>
-            <ProductsProxi/>
+            <ProductsProxi product={product}/>
           </div>
           <div>
             <Alternatives/>

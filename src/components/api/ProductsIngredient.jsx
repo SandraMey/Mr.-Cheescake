@@ -1,8 +1,9 @@
 import React from 'react'
 
-function ProductsIngredient() {
+function ProductsIngredient({product}) {
     return (
         <div className='alimentation'>
+            <table>
             <div className="title">
                 <h1>Caractéristique produit</h1>
             </div>
@@ -10,6 +11,7 @@ function ProductsIngredient() {
                 <p> Traces éventuelles : </p>
                 <p> Allergènes : {product.ingredients.allergens} </p>
                 <p> Informations nutritionnelles : </p>
+            </table>
       </div>
     )
 }

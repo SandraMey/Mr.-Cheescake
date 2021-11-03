@@ -3,11 +3,7 @@
   margin: 0;
 }
 
-body {
-  background-image: url(assets/home.jpg);
-  background-position: top;
-  background-size: cover;
-}
+
 
 .App {
   text-align: center;

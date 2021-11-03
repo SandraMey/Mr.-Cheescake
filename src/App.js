@@ -1,13 +1,12 @@
 
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import "./App.css";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import axios from "axios";
 import DisplayScan from "./components/Scan/DisplayScan";
-
 import DisplayCode from "./components/api/DisplayCode";
-import Home from "./components/Home";
+import Home from "./components/home/Home";
 
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
@@ -24,7 +23,10 @@ function App() {
       });
   };
 
-  getOpenFoodFact();
+  useEffect(() => {
+    getOpenFoodFact();
+  }, []);
+  
 
 
  
@@ -33,6 +35,7 @@ function App() {
     <div className="App">
 
       <Header />
+      <Home />
       <Router>
        
           <div className="nav-btn">

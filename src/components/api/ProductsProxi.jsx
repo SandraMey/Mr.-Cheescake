@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ProductsProxi() {
+function ProductsProxi({product}) {
     return (
         <div className='proximite' >
             <div className="title">
