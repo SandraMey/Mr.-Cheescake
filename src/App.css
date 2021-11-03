@@ -1,11 +1,17 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
+}
 
+body {
+  background-image: url(assets/home.jpg);
+  background-position: top;
+  background-size: cover;
 }
 
 .App {
   text-align: center;
+  position: relative;
 }
 
 ul {
@@ -13,22 +19,31 @@ ul {
   padding: 0;
   margin: 0;
 }
-a{
+a {
   text-decoration: none;
 }
 
-nav{
-  z-index: 2;
+.nav-btn {
   display: flex;
   justify-content: space-around;
-  color: white;
-  
   align-items: center;
-
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+  top: 8rem;
 }
 
+button{
+  width: 10rem;
+  height: 3rem;
+  color: white;
+  background-color: #467302;
+  border-radius: 10px;
+  font-weight: 500;
+}
 
+button:hover{
+  background-color: #84BF04;
+  cursor: pointer;
 
-
-
-
+}
