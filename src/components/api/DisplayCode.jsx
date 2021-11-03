@@ -7,6 +7,7 @@ import ProductsProxi from './ProductsProxi';
 import "./DisplayCode.css"
 import ProductsNutri from './ProductsNutri';
 
+
 function DisplayCode({product}) {
   
   return (
