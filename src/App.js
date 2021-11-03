@@ -28,6 +28,7 @@ function App() {
 const [product, setProduct] = useState('')
   return (
     <div className="App">
+
     <Header />
  <Router>
       <div>
@@ -52,6 +53,7 @@ const [product, setProduct] = useState('')
       </div>
     </Router>
     <Footer />
+
     </div>
   );
 }
