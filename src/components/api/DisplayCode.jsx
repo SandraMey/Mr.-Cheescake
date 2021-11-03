@@ -2,6 +2,7 @@ import React from 'react';
 import Alternatives from "../alternatives/Alternatives";
 import "./DisplayCode.css"
 
+
 function DisplayCode({product}) {
   
   return (

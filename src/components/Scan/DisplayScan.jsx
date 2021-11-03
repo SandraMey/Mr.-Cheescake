@@ -3,9 +3,10 @@ import Scanner from "./Scanner";
 import Result from "./Result";
 import "./display.css";
 import axios from "axios";
+import DisplayCode from "../api/DisplayCode";
 
 const DisplayScan = () => {
-    const [product, setProduct] = useState('')
+  const [product, setProduct] = useState('')
   const [scanning, setScanning] = useState(false);
   const [results, setResults] = useState([]);
   const scannerRef = useRef(null);
@@ -15,7 +16,7 @@ const DisplayScan = () => {
    const getOpenFoodFact = async () => {
     // Send the request
    await axios
-      .get(`https://fr.openfoodfacts.org/api/v2/product/${barcode}`)
+      .get(`https://fr.openfoodfacts.org/api/v2/product/3288131500102`)
       .then((response) => response.data)
       .then((data) => {
         setProduct(data.product);
@@ -57,6 +58,7 @@ const DisplayScan = () => {
           ) : null}
         </div>
       </div>
+    
     </div>
   );
 };
