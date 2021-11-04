@@ -32,7 +32,11 @@
     grid-row: 1;
     justify-content: flex-start;
 }
+.nameProduct h1{
+    font-size: 15px;
+}
 .detailProducts{
+    margin-left: 10px;
     display: flex;
     grid-column: 2;
     grid-row: 2;
@@ -70,4 +74,5 @@
 
 .favo p{
     margin-top: 10px;
+    margin-left: 10px;
 }

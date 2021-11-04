@@ -16,11 +16,11 @@ function Header() {
 
   
   return (
-    <section className="header">
+    <head className="header">
           <Search />
-        <article className="logoheader">
+        <div className="logoheader">
           <img className="imgheader" src={Cheesecake}></img>
-        </article>
+        </div>
         <nav className={`navbar show-nav ${showLinks ? "show_nav" : "hide-nav"} `}>
         <ul className="navbar_links">
           <li className="navbar_item slideInDown-1">
@@ -48,7 +48,7 @@ function Header() {
           <span className="burger-bar"></span>
         </button>
       </nav>
-    </section>
+    </head>
   );
 }
 export default Header;

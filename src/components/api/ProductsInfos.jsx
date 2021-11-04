@@ -12,7 +12,7 @@ function ProductsInfos( {product}) {
 
     return (
         <div className='InfoPrincipales'>
-               <img className="imgproducts" src={Cereales}></img>
+               <img className="imgproducts" src={product.image_url}></img>
             <div className="nameProduct">
                 <h1>{product.product_name} </h1>
             </div>

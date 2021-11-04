@@ -1,12 +1,40 @@
-.title{
-    display: flex;
-    justify-content: center;
-    background-color: #467302;
-    width: 200px;
-    height: 50px;
-    color: #FFFFFF;
-}
 .alimentation{
     grid-column: 3;
     grid-row: 1;
+    width: 500px;
+    height: 293px;
+    border-radius: 10px;
+    background-color:#FFDCBD ;
+    background-size: cover;
+    box-shadow: 7px 7px 1px 1px rgba(91, 91, 92, 0.2);
+}
+table{
+    border-collapse: collapse;
+    border-radius: 30px;
+    border-style: hidden; /* hide standard table (collapsed) border */
+    box-shadow: 0 0 0 1px #666; 
+}
+
+td, th{
+    border: 1px solid black;
+    
+}
+
+.alimentation caption{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.caract{
+    background-color: #467302;
+    color: #FFFFFF;
+}
+.td1-3{
+    background-color: #e2fad3;
+
+}
+.td2-4{
+    background-color: #FFFFFF;
 }
