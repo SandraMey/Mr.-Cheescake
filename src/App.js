@@ -1,5 +1,6 @@
 
-import { React, useState, useEffect } from "react";
+import { React, useState, useRef, useEffect } from "react";
+
 import "./App.css";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
@@ -10,12 +11,11 @@ import Home from "./components/home/Home";
 
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
-
 function App() {
   const [product, setProduct] = useState("");
   const getOpenFoodFact = async () => {
     // Send the request
-   await axios
+    await axios
       .get(`https://fr.openfoodfacts.org/api/v2/product/3288131500102`)
       .then((response) => response.data)
       .then((data) => {
@@ -25,19 +25,14 @@ function App() {
 
   useEffect(() => {
     getOpenFoodFact();
+    
   }, []);
-  
 
-
- 
 
   return (
     <div className="App">
-
       <Header />
       <Router>
-       
-
           <Switch>
             <Route exact path="/">
               <Home />
@@ -50,10 +45,10 @@ function App() {
             </Route>
           </Switch>
         
-      </Router>
-      
-      <Footer />
 
+      </Router>
+
+      <Footer />
     </div>
   );
 }
