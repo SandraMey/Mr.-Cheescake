@@ -1,0 +1,22 @@
+.products-pack{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0
+}
+
+.title{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.card{
+    border: solid 2px #467302;
+    border-radius: 20px;
+    background-color:rgb(131, 184, 135, 0.7);
+    width: 80%;
+    height: 50%;
+    margin: 0;
+}
