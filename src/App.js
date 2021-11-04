@@ -35,22 +35,9 @@ function App() {
     <div className="App">
 
       <Header />
-      <Home />
       <Router>
        
-          <div className="nav-btn">
 
-            <button className="buttonmenu">
-              <Link to="/">Home</Link>
-            </button>
-            <button className="buttonmenu">
-              <Link to="/DisplayScan">Je scanne</Link>
-            </button>
-            <button>
-              <Link to="/DisplayCode">Fiche Produit</Link>
-            </button>
-
-          </div>
           <Switch>
             <Route exact path="/">
               <Home />

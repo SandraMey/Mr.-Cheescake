@@ -19,27 +19,3 @@ a {
   text-decoration: none;
 }
 
-.nav-btn {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 auto;
-  width: 100%;
-  position: absolute;
-  top: 8rem;
-}
-
-.buttonmenu{
-  width: 10rem;
-  height: 3rem;
-  color: white;
-  background-color: #467302;
-  border-radius: 10px;
-  font-weight: 500;
-}
-
-.buttonmenu:hover{
-  background-color: #84BF04;
-  cursor: pointer;
-
-}
