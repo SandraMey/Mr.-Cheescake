@@ -1,4 +1,6 @@
+
 import { React, useState, useRef, useEffect } from "react";
+
 import "./App.css";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
@@ -26,9 +28,11 @@ function App() {
     
   }, []);
 
+
   return (
     <div className="App">
       <Header />
+      <Home />
       <Router>
         <div className="nav-btn">
           <button className="buttonmenu">

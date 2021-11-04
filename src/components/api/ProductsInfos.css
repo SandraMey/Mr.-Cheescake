@@ -7,8 +7,72 @@
     color: #FFFFFF;
 }
 .InfoPrincipales{
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-column: 1;
     grid-row: 1;
+    width: 500px;
+    height: 293px;
+    border-radius: 10px;
+    background-color:#FFDCBD ;
+    background-size: cover;
+    box-shadow: 7px 7px 1px 1px rgba(91, 91, 92, 0.2);
+}
+.imgproducts{
+    margin-top: 20px;
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    height: 250px;
+    width: 250px;
+}
+.nameProduct{
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+    justify-content: flex-start;
+}
+.nameProduct h1{
+    font-size: 15px;
+}
+.detailProducts{
+    margin-left: 10px;
+    display: flex;
+    grid-column: 2;
+    grid-row: 2;
+    justify-content: flex-start;
+    flex-direction: column;
+    line-height: 2em;
+}
+.InfoPrincipales p{
+    display: flex;
+    justify-content: flex-start;
+}
+.favo{
+    display: flex;
+    grid-column: 2;
+    grid-row: 3;
+    flex-direction: row-reverse;
+}
+.isFavorite {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/35/Emoji_u2665.svg");
+    background-size: 100%;
+    cursor: pointer;
+  }
+  
+  .notFavorite {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4f/Ei-heart.svg");
+    background-size: 100%;
+    cursor: pointer;
+  }
+
+.favo p{
+    margin-top: 10px;
+    margin-left: 10px;
 }

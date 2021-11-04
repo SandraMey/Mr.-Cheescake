@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ProductsNutri() {
+export default function ProductsNutri({product}) {
     return (
         <div className='niveaunutritif' > 
             <div className="title">

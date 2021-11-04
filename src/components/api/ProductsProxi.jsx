@@ -1,3 +1,4 @@
+
 import React from "react";
 import "./productsProxi.css";
 
@@ -15,6 +16,7 @@ console.log(product);
       `https://www.google.fr/maps/search/${product.stores}/@${lat},${lon},13z`
     );
   };
+
 
   return (
     <div className="products-proxi">

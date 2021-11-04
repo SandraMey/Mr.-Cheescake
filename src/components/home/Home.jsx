@@ -1,9 +1,11 @@
 import React from 'react'
 import './Home.css';
 
+
 const Home = (props) => {
 
 return (
+    <div className="home">
     <section className="body" >
         <div className="containerbutton">
            <div className="buttonconnect">
@@ -11,6 +13,8 @@ return (
             </div>
         </div>
     </section>
+    </div>
+
 )
 }
 export default Home;
