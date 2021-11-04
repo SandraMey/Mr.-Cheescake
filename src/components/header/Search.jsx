@@ -6,44 +6,39 @@ import axios from 'axios';
 
 function Search() {
     
-    const [searchTerm, setSearchTerm] = useState("");
+    const [searchTerm, setSearchTerm] = useState('soda');
     const [product, setProduct] = useState('')
 
-
     const handleSearchTerm = (e) => {
-        let value = e.target.value;
-        value.length > 2 && setSearchTerm(value);
+        console.log(e.target.value)
+        setSearchTerm(e.target.value)
     };
+
     const getOpenFoodFact = () => {
     // Send the request 
-    const codebarre = 'camembert'
+    const keyword = "soda"
     axios
-    .get(`https://world.openfoodfacts.org/cgi/search.pl?action=process&search_terms=${codebarre}`)
+    .get(`https://fr.openfoodfacts.org/cgi/search.pl?action=process&search_terms=${keyword}&json=true`)
     .then((response) => response.data)
     .then((data) => {
     setProduct(data.product)
-    console.log(data.product)
     })
     }
   
 
     return (
-        <article className="searchBar">
+        <div>
+        <form action="" onSubmit={getOpenFoodFact}>
             <input 
             type="text" 
             name="searchBar" 
             id="searchBar" 
             placeholder="Rechercher" 
-            onChange={handleSearchTerm}
-            />
-        <button 
-          className="searchButton"
-          type="button"
-          onClick = {getOpenFoodFact}
-          >
-        </button>
-        </article>
-
+            onChange={handleSearchTerm} value={searchTerm}/>
+        <button className="searchButton" type="button"> </button>
+        </form>
+        <input/>
+        </div>
     )
 }
 
