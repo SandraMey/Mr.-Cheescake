@@ -6,6 +6,7 @@
     grid-column: 2;
     grid-row: 1;
     font-weight: 900;
+    padding: 15px;
 }
 .searchBar input {
     z-index: 1;
