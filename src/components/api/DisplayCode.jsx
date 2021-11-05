@@ -12,29 +12,16 @@ import "./DisplayCode.css"
 function DisplayCode({product}) {
   return (
     product && (
-      <div>
-        <article className='DisplayCode'> 
-        <div>
-            <ProductsInfos product={product}/>
-          </div>
-          <div>
-            <ProductsIngredient product={product} />
-          </div>
-          <div>
-            <ProductsNutri  product={product}/>
-          </div>
-          <div>
-            <ProductsProxi product={product}/>
-          </div>
-          <div>
-            <Alternatives/>
-          </div>
+      <main>
+        <section className='DisplayCode'> 
+          <ProductsInfos product={product}/>
+          <ProductsIngredient product={product} />
+          <ProductsNutri  product={product}/>
+          <Alternatives/>
           <ProductsPack product={product} />
           <ProductsProxi product={product} />
-
-
-        </article>        
-      </div>
+        </section>        
+      </main>
     )
   );
 }

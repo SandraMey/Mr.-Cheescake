@@ -1,22 +1,25 @@
 .products-pack{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 0
-}
+    grid-column: 1;
+    grid-row: 5;
+    width: 340px;
+    height: 250px;
+    margin-top: 20px;
+    margin-left: 5px;
+    border-radius: 10px;
+    background-color:#FFDCBD ;
+    background-size: cover;
+    box-shadow: 7px 7px 1px 1px rgba(91, 91, 92, 0.2);
+  }
 
-.title{
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+  .products-pack caption{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
 }
-
-.card{
-    border: solid 2px #467302;
-    border-radius: 20px;
-    background-color:rgb(131, 184, 135, 0.7);
-    width: 80%;
-    height: 50%;
-    margin: 0;
+@media screen and (min-width: 767px){
+  .products-pack{
+      grid-column: 1;
+      grid-row: 2;
+  }
 }

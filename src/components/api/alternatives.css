@@ -1,3 +1,16 @@
+.alternative{
+  grid-column: 1;
+  grid-row: 4;
+  width: 340px;
+  height: 250px;
+  margin-top: 20px;
+  margin-left: 5px;
+  border-radius: 10px;
+  background-color:#FFDCBD ;
+  background-size: cover;
+  box-shadow: 7px 7px 1px 1px rgba(91, 91, 92, 0.2);
+}
+
 h1 {
     text-align: center;
     margin: 30px;
@@ -39,4 +52,11 @@ h1 {
   button:active {
     background-color: #84BF04;
     }
+
+    @media screen and (min-width: 767px){
+      .alternative{
+          grid-column: 3;
+          grid-row: 2;
+      }
+  }
   

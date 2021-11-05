@@ -4,15 +4,28 @@ import "./productsPack.css";
 export default function ProductsPack({product}) {
     
     return (
-        <div className='products-pack' > 
-            <div className="card">
-            <h1 className="title">Impact environnemental</h1>
-
-            <p> Packaging: {product.packaging} </p> 
-            <p> Ecoscore: {product.ecoscore_grade} </p> 
-            <p> Labels : {product.labels}</p>
-            <p> Ingredients provenant de l'huile de palme : {product.ingredients_that_may_be_from_palm_oil_n}</p>
-            </div>
-      </div>
+        <article className='products-pack' > 
+            <table>
+                <caption>Impact environnemental</caption>
+                <tr>
+                    <th className="caract">Packaging:</th>
+                    <td className="td1-3">{product.packaging}</td>
+                </tr>
+                <tr>
+                    <th className="caract">Ecoscore:</th>
+                    <td className="td2-4">{product.ecoscore_grade} </td>
+                </tr>
+                <tr>
+                    <th className="caract">Labels : </th>
+                    <td className="td1-3">{product.labels}</td>
+                </tr>
+                <tr>
+                    <th className="caract">Ingredients provenant de l'huile de palme : </th>
+                    <td className="td2-4">{product.ingredients_that_may_be_from_palm_oil_n}</td>
+                </tr>
+            </table>
+        </article>
     )
 }
+
+

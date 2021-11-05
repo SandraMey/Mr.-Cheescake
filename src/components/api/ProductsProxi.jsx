@@ -19,16 +19,15 @@ console.log(product);
 
 
   return (
-    <div className="products-proxi">
-      <div className="card">
+    <article className="products-proxi">
+
         <h1 className="title">Où acheter</h1>
 
-        <p> Magasins: {product.stores} </p>
+        <p> <u>Magasins:</u> {product.stores} </p>
 
         <button className="map-button" onClick={handleClick}>
           Près de chez vous
         </button>
-      </div>
-    </div>
+    </article>
   );
 }

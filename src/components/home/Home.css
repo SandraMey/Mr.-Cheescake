@@ -3,11 +3,11 @@
   padding: 0;
 
 }
-
 .body{
   background-image: url(../../assets/home.jpg) ;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
@@ -25,7 +25,6 @@
 }
 
 .buttonScan{
-  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,13 +34,14 @@
   width: 150px;
   height: 50px;
 }
-.divbutt{
+.wrapbutton{
   display: flex;
   grid-column: 1;
   grid-row: 2;
   justify-content: center;
   align-items: flex-start;
 }
+
 .buttonmenu{
   display: flex;
   justify-content: center;
@@ -52,7 +52,7 @@
   width: 150px;
   height: 50px;
 }
-.divbutt2{
+.wrapbutton2{
   display: flex;
   grid-column: 1;
   grid-row: 2;
@@ -60,54 +60,4 @@
   padding: 100px;
 }
 
-/*.buttonconnect{
-/*  order:2;
-/*  height: 50px;
-/*}
-/*.button2 { 
-/*  background-color: white ;
-/*  color: #467302;
-/*  border: none;
-/*  border-radius: 10px;
-/*  font-size: 20px;
-/*}
-/*.button1 {
-/*  background-color: #467302;
-/*  color: white;
-/*  border: none;
-/*  border-radius: 10px;
-/*  font-size: 20px;
-/*}
-/*.containerbutton {
-/*  display: flex;
-/*  flex-direction: column;
-/*  justify-content: center;
-/*  grid-column: 2;
-/*  grid-row: 2;
-/*}
-/*.nav-btn {
-/*  display: flex;
-/*  justify-content: space-around;
-/*  align-items: center;
-/*  margin: 0 auto;
-/*  width: 100%;
-/*  position: absolute;
-/*  top: 8rem;
-/*}
-/*
-/*.buttonmenu{
-/*  width: 10rem;
-/*  height: 3rem;
-/*  color: white;
-/*  background-color: #467302;
-/*  border-radius: 10px;
-/*  font-weight: 500;
-/*}
-/*
-/*.buttonmenu:hover{
-/*  background-color: #84BF04;
-/*  cursor: pointer;
-/*  
-/*}
-/*
-/**/
+

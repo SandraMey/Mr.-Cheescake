@@ -10,23 +10,25 @@ const Home = (props) => {
 
 
 return (
-    <div className="home">
+    <main className="home">
         <section className="body">
             <div className="logomain">
                 <img className="imgmain" src={logo}></img>
             </div>
-            <div className="divbutt">   
+            <div className="buttonhome">
+            <div className="wrapbutton">   
                 <button className="buttonScan">
                     <Link to="/DisplayScan">Je scanne</Link>
                 </button>
             </div>
-            <div className="divbutt2">
+            <div className="wrapbutton2">
                 <button className="buttonmenu">
                     <Link to="/DisplayCode">Fiche Produit</Link>
                 </button>
             </div>
+            </div>
         </section>
-    </div>
+    </main>
 )
 }
 export default Home;

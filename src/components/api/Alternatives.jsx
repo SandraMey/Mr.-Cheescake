@@ -9,8 +9,7 @@ function handleClickFavorite() {
   setIsFavorite(!isFavorite);
 }
     return (
-        <div>
-            <article>
+            <article className="alternative">
                 <div>
                     <h1 className="text-center">Recommandation</h1>
                 </div>
@@ -29,7 +28,6 @@ function handleClickFavorite() {
                     <button type="button">Voir fiche Produit</button>
                 </div>
             </article>
-        </div>
 
     );
 }

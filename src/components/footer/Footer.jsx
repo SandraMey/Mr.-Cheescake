@@ -5,7 +5,7 @@ import "./Footer.css";
 
 function Footer() {
     return (
-        <section class="footer">
+        <footer class="footer">
             <article className="logofooter">
                 <img className="imgfooter"src={Cheesecake}></img>
             </article>
@@ -20,7 +20,7 @@ function Footer() {
                 <img class="icon" src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="instagram"/>
                 <img class="icon" src="https://img.icons8.com/fluency/48/000000/youtube-play.png" alt="youtube"/>
             </article>
-        </section>
+        </footer>
     )
 }
 

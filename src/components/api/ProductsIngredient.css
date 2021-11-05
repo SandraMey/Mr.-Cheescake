@@ -1,8 +1,9 @@
 .alimentation{
-    grid-column: 3;
-    grid-row: 1;
-    width: 500px;
-    height: 293px;
+    grid-column: 1;
+    grid-row: 2;
+    width: 340px;
+    height: auto;
+    margin-top: 20px;
     border-radius: 10px;
     background-color:#FFDCBD ;
     background-size: cover;
@@ -10,9 +11,7 @@
 }
 table{
     border-collapse: collapse;
-    border-radius: 30px;
-    border-style: hidden; /* hide standard table (collapsed) border */
-    box-shadow: 0 0 0 1px #666; 
+ 
 }
 
 td, th{
@@ -30,6 +29,7 @@ td, th{
 .caract{
     background-color: #467302;
     color: #FFFFFF;
+    width: 100px;
 }
 .td1-3{
     background-color: #e2fad3;
@@ -37,4 +37,11 @@ td, th{
 }
 .td2-4{
     background-color: #FFFFFF;
+}
+
+@media screen and (min-width: 767px){
+    .alimentation{
+        grid-column: 2;
+        grid-row: 1;
+    }
 }

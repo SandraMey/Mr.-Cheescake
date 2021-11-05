@@ -3,7 +3,7 @@ import "./ProductsIngredient.css";
 
 function ProductsIngredient({product}) {
     return (
-        <div className='alimentation'>
+        <article className='alimentation'>
             <table>
                 <caption>Caractéristique produit</caption>
                 <tr>
@@ -23,7 +23,7 @@ function ProductsIngredient({product}) {
                     <td className="td2-4">{product.categories}</td>
                 </tr>
             </table>
-      </div>
+      </article>
     )
 }
 

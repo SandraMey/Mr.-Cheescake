@@ -1,60 +1,45 @@
-.title{
-    display: flex;
-    justify-content: center;
-    background-color: #467302;
-    width: 200px;
-    height: 50px;
-    color: #FFFFFF;
-}
 .InfoPrincipales{
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
     grid-column: 1;
     grid-row: 1;
-    width: 500px;
-    height: 293px;
+    width: 340px;
+    height: 250px;
     border-radius: 10px;
     background-color:#FFDCBD ;
     background-size: cover;
     box-shadow: 7px 7px 1px 1px rgba(91, 91, 92, 0.2);
 }
 .imgproducts{
-    margin-top: 20px;
     grid-column: 1;
-    grid-row: 1 / span 3;
-    height: 250px;
-    width: 250px;
+    grid-row: 2;
+    height: 130px;
+    width: 130px;
+    margin-left: 10px;
 }
 .nameProduct{
-    display: flex;
-    grid-column: 2;
+    grid-column: 1 / span  2;
     grid-row: 1;
-    justify-content: flex-start;
 }
 .nameProduct h1{
+    display: flex;
     font-size: 15px;
+    justify-content: center;
 }
 .detailProducts{
-    margin-left: 10px;
     display: flex;
     grid-column: 2;
     grid-row: 2;
-    justify-content: flex-start;
     flex-direction: column;
     line-height: 2em;
 }
-.InfoPrincipales p{
-    display: flex;
-    justify-content: flex-start;
-}
-.favo{
-    display: flex;
+
+
+.isFavorite {
     grid-column: 2;
     grid-row: 3;
-    flex-direction: row-reverse;
-}
-.isFavorite {
     display: block;
     width: 30px;
     height: 30px;
@@ -64,6 +49,8 @@
   }
   
   .notFavorite {
+    grid-column: 2;
+    grid-row: 3;
     display: block;
     width: 30px;
     height: 30px;
@@ -72,7 +59,3 @@
     cursor: pointer;
   }
 
-.favo p{
-    margin-top: 10px;
-    margin-left: 10px;
-}

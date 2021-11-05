@@ -19,7 +19,7 @@ function Header() {
 
   
   return (
-    <head className="header">
+    <header className="header">
           <Search onSubmit={onSubmit}/>
         <div className="logoheader">
           <img className="imgheader" src={Cheesecake}></img>
@@ -52,7 +52,7 @@ function Header() {
           <span className="burger-bar"></span>
         </button>
       </nav>
-    </head>
+    </header>
   );
 }
 export default Header;

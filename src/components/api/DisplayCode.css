@@ -1,30 +1,18 @@
 .DisplayCode{
+    padding-top: 80px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    height: 100vh;
-    
-}
-.title{
-    display: flex;
-    justify-content: center;
-    background-color: #467302;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     width: 100%;
-    width: 200px;
-    height: 50px;
-    color: #FFFFFF;
+    padding-left: 15px;
+    padding-bottom: 80px;
 }
 
-.imageProduit{
-    grid-column: 2;
-    grid-row: 1;
+@media screen and (min-width: 767px){
+    .DisplayCode{
+        grid-template-columns : 1fr 1fr 1fr;
+        grid-template-rows : 1fr 1fr;
+    }
 }
 
-.niveaunutritif{
-    grid-column: 1;
-    grid-row: 2;
-}
-.proximite{
-    grid-column: 2;
-    grid-row: 2;
-}
+
