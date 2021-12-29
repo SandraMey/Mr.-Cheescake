@@ -1,0 +1,125 @@
+.card {
+    width: 30vw;
+    height: 37vh;
+    margin: 5 0 0 0;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 5px;
+    border-radius: 10px;
+    background-color:#FFDCBD ;
+    background-size: cover;
+    box-shadow: 7px 7px 1px 1px rgba(91, 91, 92, 0.2);
+    transform-style: preserve-3d;
+    transition: 300ms;
+    transform: perspective(1000px) rotateY(var(--rotate-y, 0))
+    translateY(var(--translate-y, 0));
+  }
+  
+  
+  .card.flip {
+    --rotate-y: 180deg;
+  }
+  
+  .card .front,
+  .card .back {
+    position: absolute;
+    padding: 1rem;
+    backface-visibility: hidden;
+    width: inherit;
+    height: inherit;
+    color: #467302;
+  }
+  
+  .card .front{
+    transform: rotateY(0deg);
+    left: 0;
+    width: inherit;
+    height: inherit;
+    color: #467302;
+  }
+  .card .back{
+    transform: rotateY(180deg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr ;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .imgproducts{
+    grid-column: 1;
+    grid-row: 2;
+    height: 150px;
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+  
+  }
+  .nameProduct{
+    grid-column: 1 / span  2;
+    grid-row: 1;
+  }
+  .nameProduct h1{
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    margin-top: 10px;
+    color: #730217;
+  }
+  
+  .detailProducts{
+    display: flex;
+    grid-column: 2;
+    grid-row: 2;
+    flex-direction: column;
+    text-align: left;
+    line-height: 2em;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  
+  .details u{
+  font-size: 16px;
+  font-weight: 600;
+  }
+  
+  .details{
+  font-size: 16px;
+  font-weight: 500;
+  }
+  
+  h1{
+    font-size: 2rem;
+  }
+  
+  .titleFront{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #467302;
+  }
+  
+  .icon{
+  color: #467302;
+  }
+  
+  @media screen and (max-width: 767px){
+  
+  .card{
+  
+    width: 95vw;
+    height: 37vh;
+  }
+  
+  .titleFront{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #467302;
+  }
+  
+  .nameProduct{
+    font-size: 20px;
+  }
+  }
+  
+

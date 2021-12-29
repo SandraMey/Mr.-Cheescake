@@ -1,18 +1,37 @@
 .DisplayCode{
-    padding-top: 80px;
+    padding-top: 10px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    width: 100%;
-    padding-left: 15px;
-    padding-bottom: 80px;
+    width: 100vw;
+    height: 100vh;
+    padding-left: 5px;
+    padding-bottom: 180px;
+    background: linear-gradient(rgba(202, 223, 157, 0.2), rgba(185, 206, 139, 0.2)),
+    url(../../assets/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 @media screen and (min-width: 767px){
     .DisplayCode{
         grid-template-columns : 1fr 1fr 1fr;
         grid-template-rows : 1fr 1fr;
+        padding-left: 50px;
+        padding-top: 0px;
+        position: fixed;
     }
+}
+
+
+.niveaunutritif{
+    grid-column: 1;
+    grid-row: 2;
+}
+.proximite{
+    grid-column: 2;
+    grid-row: 2;
 }
 
 

@@ -1,0 +1,86 @@
+.map-button{
+  grid-column: 1;
+  grid-row: 3;
+  background-color: #84BF04;
+  width: 180px;
+  height: 50px;
+  font-size: 1.2rem;
+  border: 2px solid #FFFFFF;
+  border-radius:  30px;
+  color: black;
+  font-weight: 500;  
+  cursor: pointer;
+
+}
+
+
+.products-proxi{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column: 1;
+  grid-row: 6;
+  width: 95vw;
+  height: 37vh;
+  border-radius: 10px;
+  background-color:#FFDCBD ;
+  background-size: cover;
+  box-shadow: 7px 7px 1px 1px rgba(91, 91, 92, 0.2);
+  transform-style: preserve-3d;
+  transform: perspective(1000px) rotateY(var(--rotate-y, 0))
+  translateY(var(--translate-y, 0));
+}
+
+
+
+.title{
+  grid-column: 1;
+  grid-row: 1;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color : #730217;
+}
+.store{
+  color : #467302;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.store u{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 767px){
+  .products-proxi{
+    width: 30vw;
+    height: 37vh;
+    margin: 0 0 0 0;
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .title{
+    font-size:30px;
+  }
+}
+
+.titleFront{
+  transform: rotateY(0deg);
+  left: 0;
+  width: inherit;
+  height: inherit;
+  color: #467302;
+}
+
+
+.front{
+  margin-top: 50px;
+}
+
+
+
+

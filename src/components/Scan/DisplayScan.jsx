@@ -3,34 +3,39 @@ import Scanner from "./Scanner";
 import Result from "./Result";
 import "./display.css";
 import axios from "axios";
-import DisplayCode from "../api/DisplayCode";
 
-const DisplayScan = () => {
-  const [product, setProduct] = useState('')
+
+const DisplayScan = ({setProduct, product}) => {
   const [scanning, setScanning] = useState(false);
   const [results, setResults] = useState([]);
   const scannerRef = useRef(null);
   const initialRender = useRef(true);
   let barcode = results[0];
 
+
    const getOpenFoodFact = async () => {
     // Send the request
-   await axios
-      .get(`https://fr.openfoodfacts.org/api/v2/product/3288131500102`)
+   
+   try{ await axios
+      .get(`https://fr.openfoodfacts.org/api/v2/product/${barcode}`)
       .then((response) => response.data)
       .then((data) => {
         setProduct(data.product);
       });
+    } catch {
+      alert('Produit non trouvé, rééssayez de scanner')
+    }
   };
+
 
   useEffect(() => {
     if (initialRender.current) {
       initialRender.current = false;
-    } else 
-    getOpenFoodFact();
-
-
+      }else  getOpenFoodFact();
+      
   }, [barcode]);
+
+ 
 
   return (
     <div className="displayScan">
@@ -58,7 +63,7 @@ const DisplayScan = () => {
           ) : null}
         </div>
       </div>
-    
+   
     </div>
   );
 };

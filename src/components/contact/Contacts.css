@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Body Content Start */
+/* ************ */
+/* ******** */
+/* *****/
+/* * */
+
+.allPageContact{
+    width: 100%;
+    background-color: white;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.p1 {
+  color: #bf1650;
+}
+
+.p1::before {
+  display: inline;
+  content: "⚠";
+}
+
+.p2 {
+  color: #bf1650;
+}
+
+.p2::before {
+  display: inline;
+  content: "⚠";
+}
+
+.healthier {
+  color: #467302;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+.whoWeAre {
+    color: #467302;
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    margin-top : 20px
+}
+
+/* ***** */
+/* ******* */
+/* ********** */
+/* ************** */
+/* Body element end */
+
+
+
+
+
+/* Door elements start */
+/* ************ */
+/* ******** */
+/* *****/
+/* * */
+.doorContainer {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.wrapper {
+    height: 300px;
+    width: 250px;
+    border: 5px solid #467302;
+    position: relative;
+    perspective: 1000px;
+}
+
+.imgContact {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.door {
+    background-color: #84BF04;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+  .wrapper:hover #left-door {
+    transform: rotateY(-140deg);
+  }
+  
+  .wrapper:hover #right-door {
+    transform: rotateY(140deg);
+  }
+  
+  #left-door {
+    top: 0;
+    left: 0;
+    border-right: 1px solid #FFDCBD;
+    transform-origin: left;
+    transition: transform 0.5s;
+  }
+  
+  #right-door {
+    top: 0;
+    right: 0;
+    border-left: 1px solid #FFDCBD;
+    transform-origin: right;
+    transition: transform 0.5s;
+  }
+  /* ***** */
+  /* ******* */
+  /* ********** */
+  /* ************** */
+  /* Body element end */
+
+  /*Contact area  Start*/
+  /* ************ */
+  /* ******** */
+  /* *****/
+  /* * */
+  .contactsHooksStyle {
+    padding-top: 2rem;
+    padding-bottom: 80px;
+    background-color: #467302;
+  }
+
+  .textareaContact {
+    border-radius: 4px;
+  }
+  
+  .emailContact {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid white;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .contactContainer {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  /* ***** */
+  /* ******* */
+  /* ********** */
+  /* ************** */
+  /* Contact element end */
+  
+
+
+  
+  /* Button element start */
+  /* ************ */
+  /* ******** */
+  /* *****/
+  /* ***/
+
+  .submitContact[type="submit"] {
+    background: #84bf04;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 5px;
+  }
+  
+  
+  .submitContact[type="submit"]:hover {
+    background: #f2994b;
+  }
+  /* ***** */
+  /* ******* */
+  /* ********** */
+  /* ************** */
+  /* Button element end */
+  /* ************ */
+  /* ******** */
+  /* *****/
+  /* * */
+
+  @media screen and (max-width: 767px) {
+    .doorContainer {
+        display: flex;
+        flex-wrap: wrap;
+  }
+    .doorContainer > div {
+        flex: 50%;
+        margin-bottom: 10px;
+  }
+    .whoWeAre {
+        display: flex;
+        justify-content: center;
+  } 
+
+  .door {
+    display: none;
+  }
+
+  .contactsHooksStyle {
+    padding: 2rem;
+    padding-bottom: 80px;
+    background-color: #467302;
+  } 
+
+  }

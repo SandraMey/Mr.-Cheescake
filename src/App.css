@@ -1,9 +1,16 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+
+
 }
 
-
+::-webkit-scrollbar{
+  display: none;
+}
 
 .App {
   text-align: center;
@@ -18,4 +25,3 @@ ul {
 a {
   text-decoration: none;
 }
-

@@ -3,6 +3,7 @@
 }
 
 .header{
+    z-index: 1;
     position: fixed;
     top: 0;
     display: grid;
@@ -16,10 +17,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 10%;
     padding-top: 0;
     grid-column: 1;
     grid-row: 1;
+    
 }
 .imgheader{
     width: 55px;
@@ -38,7 +39,7 @@
     position: fixed;
     width: 100%;
     min-height: 75px;
-    height: 380px;
+    height: 75px;
     padding: 1rem;
     background-size: 100%;
     color: #FFFFFF;
@@ -79,7 +80,8 @@
     color: inherit;
     display: block;
     padding: 1.5rem;
-    font-size: 5vw;
+    font-size: 8vw;
+    font-weight: 500;
 }
 .navbar_burger{
     z-index: 1;
@@ -94,6 +96,7 @@
     position: fixed;
     top: 1rem;
     right: 1rem;
+    cursor: pointer;
 }
 .navbar_burger:hover{
     cursor: pointer;
@@ -184,4 +187,5 @@
     }
 
 }  
+
   

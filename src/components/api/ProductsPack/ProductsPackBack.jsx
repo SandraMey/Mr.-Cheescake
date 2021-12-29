@@ -1,7 +1,7 @@
 import React from 'react'
 import "./productsPack.css";
 
-export default function ProductsPack({product}) {
+export default function ProductsPackBack({product}) {
     
     return (
         <article className='products-pack' > 
@@ -9,15 +9,15 @@ export default function ProductsPack({product}) {
                 <caption>Impact environnemental</caption>
                 <tr>
                     <th className="caract">Packaging:</th>
-                    <td className="td1-3">{product.packaging}</td>
+                    <td className="td1-3">{product.packaging_text}</td>
                 </tr>
                 <tr>
                     <th className="caract">Ecoscore:</th>
-                    <td className="td2-4">{product.ecoscore_grade} </td>
+                    <td className="td2-4"><img className='ecoscore' src={"https://fr.openfoodfacts.org/images/attributes/ecoscore-" + product.ecoscore_grade + ".svg"} alt={''} /></td>
                 </tr>
                 <tr>
                     <th className="caract">Labels : </th>
-                    <td className="td1-3">{product.labels}</td>
+                    <td className="td1-3">{product.labels_old}</td>
                 </tr>
                 <tr>
                     <th className="caract">Ingredients provenant de l'huile de palme : </th>
@@ -27,5 +27,3 @@ export default function ProductsPack({product}) {
         </article>
     )
 }
-
-

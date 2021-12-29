@@ -1,63 +1,80 @@
-*{
+* {
   margin: 0;
   padding: 0;
-
 }
-.body{
-  background-image: url(../../assets/home.jpg) ;
+.body {
+  background: linear-gradient(rgba(197, 218, 152, 0.2), rgba(187, 211, 136, 0.2)),
+    url(../../assets/home.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  width: 100%;
-  min-height: 800px;
-}
-.logomain{
   display: flex;
-  grid-column: 1;
-  grid-row: 1;
-  justify-self: center;
-  align-self: center;
-  width: 150px;
-  height: 150px;
-}
-
-.buttonScan{
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #84BF04;
-  border-radius: 10px;
-  color: #FFFFFF;
-  width: 150px;
-  height: 50px;
-}
-.wrapbutton{
-  display: flex;
-  grid-column: 1;
-  grid-row: 2;
-  justify-content: center;
-  align-items: flex-start;
+  width: 100vw;
+  height: 720px;
+  padding: 0;
 }
 
-.buttonmenu{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #84BF04;
-  border-radius: 10px;
-  color: #FFFFFF;
-  width: 150px;
-  height: 50px;
-}
-.wrapbutton2{
-  display: flex;
-  grid-column: 1;
-  grid-row: 2;
-  justify-content: center;
-  padding: 100px;
+.intro{
+  color: #ffffff;
+  font-style: italic;
+  width: 70%;
+  height: 300px;
+  margin-bottom: 80px;
+  font-size: 1.5rem;
+  
 }
 
+.img-container{
+height: 200px;
+display: flex;
+align-items: center;
+}
+
+ .scan-img {
+    border-radius: 20px;
+    animation-name: slideIn;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    height: 10rem;
+
+}
+
+.scan-img:hover{
+  height: 12rem;
+  filter: brightness(150%);
+  transition: height 0.9s;
+  transition: filter 0.9s;
+  cursor: pointer;
+}
+
+@keyframes slideIn {
+  0% {
+    margin-bottom: 0;
+  }
+
+  50% {
+    margin-bottom: 1rem;
+  }
+
+  100% {
+    margin-bottom: 0;
+  }
+}
+
+
+
+@media screen and (min-width: 767px) {
+  .body {
+    margin-top: 80px;
+    margin-bottom: 0;
+    min-height: 850px;
+  }
+
+.intro{
+  font-size: 2.5rem;
+}  
+}
 

@@ -138,3 +138,4 @@ Scanner.propTypes = {
 
 export default Scanner;
 
+

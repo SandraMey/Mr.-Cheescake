@@ -1,0 +1,103 @@
+
+body{
+    background: linear-gradient(rgba(197, 218, 152, 0.2), rgba(187, 211, 136, 0.2)),
+    url(../../assets/home.jpg);
+
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 640px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.productName h1{
+    position: relative;
+    margin-top: 120px;
+    margin-left: 10px;
+    color: #FFFFFF;
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+}
+.carousel-root{
+   position: fixed;
+   margin-top: 10px;
+   margin-bottom: 100px;
+   width: 100%;
+   height: auto;
+}
+.carousel{
+    position: relative;
+}
+.slider{
+    width: 100vw;
+    height: 100vh;
+}
+
+.slider-wrapper .imgslide{
+    width: 250px;
+    height: 350px;
+}
+
+
+.carousel .thumbs{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    height: 100px;
+}
+
+.carousel .thumb{
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+   
+.carousel .overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 0.4rem 1.5rem;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.6) ;
+    border: 2px solid #FFFFFF;
+    color: #467302;
+}
+
+
+.carousel .overlay__title{
+    display: flex;
+    text-align: center;
+    align-items: center; 
+    color: #467302;
+    cursor: pointer;
+    
+}
+
+
+
+@media screen and (min-width: 767px)  {
+    .carousel-root{
+        width: 767px;
+        margin-left: 20%;
+        margin-right: 20%;
+     }
+    .productName h1{
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        text-align: center;
+        margin-top: 100px;
+        width: 100%;
+    }
+    .slider{
+        width: 200px;
+        height: 500px;
+    }
+    .slider-wrapper .imgslide{
+        width: 250px;
+        height: 500px;
+    }
+}

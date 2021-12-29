@@ -2,39 +2,66 @@
     font-size: 14px;
 }
 
+.displayScan{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(197, 218, 152, 0.2), rgba(187, 211, 136, 0.2)),
+    url(../../assets/home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+ 
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: relative;
-    top: 18rem;
+    top: 10rem;
+    overflow: hidden;
 }
 
+
 .window {
+    display: block;
     position: relative;
     border: 10px solid #467302;
 }
 
 .drawingBuffer{
     position: absolute;
-    top: 10rem;
+    top: 0px;
+    left: 0px;
+    width: 240px;
+    height: 480px;
 }
 
-.buttonscan{
+.buttonScan{
     width: 10rem;
     font-size: 2rem;
     color: white;
     background-color: #467302;
     border-radius: 10px;
     margin-top: 1rem;
-
 }
 
-.buttonscan:hover{
+.buttonScan:hover{
     background-color: #84BF04;
     cursor: pointer;
+}
 
+
+@media screen and (min-width: 767px)  {
+    .window{
+        width: 660px;
+        height: 500px;
+    }
+    .drawingBuffer{
+        width: 640px;
+        height: 480px;
+    }
 }
 
 
